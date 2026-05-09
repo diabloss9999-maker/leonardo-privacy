@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성남시 12개 KPI</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', sans-serif; background: #f5f0ea; color: #1a1a1a; padding: 60px 40px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .title { font-size: 36px; font-weight: 800; margin-bottom: 40px; text-align: center; }
+    .title span { color: #d94040; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 20px;
+      min-height: 170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #e8e3db;
+    }
+    .card-label {
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+    .card-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .card-value {
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+    .card-value .unit {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .card-value .sub {
+      font-size: 24px;
+      font-weight: 400;
+      color: #999;
+    }
+    .card-value .red { color: #d94040; }
+    .card-desc {
+      font-size: 11px;
+      color: #aaa;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">우리가 본 <span>12개</span>의 숫자</h1>
+    <div class="grid">
+
+      <!-- 01 소비 격차 -->
+      <div class="card">
+        <div>
+          <div class="card-label">01 · 소비 격차</div>
+          <div class="card-value">16.6 <span class="unit">×</span></div>
+        </div>
+        <div class="card-desc">
+          분당 — 중원 카드매출 격차<br>
+          분당 839,347억 / 중원 50,617억
+        </div>
+      </div>
+
+      <!-- 02 비례지수 -->
+      <div class="card">
+        <div>
+          <div class="card-label">02 · 비례지수</div>
+          <div class="card-value">0.94 <span class="sub">/ 0.92</span></div>
+        </div>
+        <div class="card-desc">
+          분당 vs 수정·중원 경제활동 비율
+        </div>
+      </div>
+
+      <!-- 03 LTI -->
+      <div class="card">
+        <div>
+          <div class="card-label">03 · LTI</div>
+          <div class="card-value">13.9 <span class="sub">/ 12.2</span></div>
+        </div>
+        <div class="card-desc">
+          분당 vs 수정 소득대비대출 배수
+        </div>
+      </div>
+
+      <!-- 04 비은행 비중 -->
+      <div class="card">
+        <div>
+          <div class="card-label">04 · 비은행 비중</div>
+          <div class="card-value"><span class="red">+8.3</span> <span class="unit">%p</span></div>
+        </div>
+        <div class="card-desc">
+          수정·중원 39.0% — 분당 30.7%
+        </div>
+      </div>
+
+      <!-- 05 전입자 평균 소득 (수정) -->
+      <div class="card">
+        <div>
+          <div class="card-label">05 · 전입자 평균 소득</div>
+          <div class="card-value">분당 <span class="sub">vs</span> <span class="red">수정/중원</span></div>
+        </div>
+        <div class="card-desc">
+          분당 vs 수정/중원 전입자 평균소득 비교<br>
+          KCB 주거이동 데이터 기준
+        </div>
+      </div>
+
+      <!-- 06 가맹점 수 (수정) -->
+      <div class="card">
+        <div>
+          <div class="card-label">06 · 가맹점 수</div>
+          <div class="card-value">수정 <span class="sub">vs 분당</span></div>
+        </div>
+        <div class="card-desc">
+          구별 신한카드 가맹점 수 비교<br>
+          2024년 기준
+        </div>
+      </div>
+
+      <!-- 07 유동인구 -->
+      <div class="card">
+        <div>
+          <div class="card-label">07 · 유동인구 (분당)</div>
+          <div class="card-value">1.43 <span class="unit">×</span></div>
+        </div>
+        <div class="card-desc">
+          수정+중원 합계 대비
+        </div>
+      </div>
+
+      <!-- 08 동단위 양극화 (수정: 4,700배) -->
+      <div class="card">
+        <div>
+          <div class="card-label">08 · 동단위 양극화</div>
+          <div class="card-value"><span class="red">4,700</span><span class="unit">배</span></div>
+        </div>
+        <div class="card-desc">
+          정자1동 vs 은행1동 매출 격차<br>
+          480,764억 vs 102억
+        </div>
+      </div>
+
+      <!-- 09 TOP 20 직장동 -->
+      <div class="card">
+        <div>
+          <div class="card-label">09 · TOP 20 직장동</div>
+          <div class="card-value">4 <span class="unit">곳</span></div>
+        </div>
+        <div class="card-desc">
+          전국 1인당 지출 TOP 20 內 성남
+        </div>
+      </div>
+
+      <!-- 10 유동·정점 -->
+      <div class="card">
+        <div>
+          <div class="card-label">10 · 유동·정점</div>
+          <div class="card-value">12 <span class="sub">/ 12 시</span></div>
+        </div>
+        <div class="card-desc">
+          분당·수정·중원 모두 12시 점심 정점
+        </div>
+      </div>
+
+      <!-- 11 관광 유입 -->
+      <div class="card">
+        <div>
+          <div class="card-label">11 · 관광 유입 (수정·중원)</div>
+          <div class="card-value">≈ 0 <span class="unit">%</span></div>
+        </div>
+        <div class="card-desc">
+          외부 체류 사실상 없음 (PURPOSE=4 비중)
+        </div>
+      </div>
+
+      <!-- 12 노후건물 비율 -->
+      <div class="card">
+        <div>
+          <div class="card-label">12 · 노후건물 비율</div>
+          <div class="card-value">67 <span class="unit">%</span></div>
+        </div>
+        <div class="card-desc">
+          수정·중원 — 분당 35%의 약 1.9배
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
